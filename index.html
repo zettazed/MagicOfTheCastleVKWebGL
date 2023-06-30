@@ -81,12 +81,12 @@
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       // To lower canvas resolution on mobile devices to gain some
       // performance, uncomment the following line:
-      // config.devicePixelRatio = 1;
+      config.devicePixelRatio = 1;
 
       canvas.style.width = "100vw";
       canvas.style.height = "100vh";
     } else {
-      canvas.style.width = "90%";
+      canvas.style.width = "auto";
       canvas.style.height = "90%";
     }
 
